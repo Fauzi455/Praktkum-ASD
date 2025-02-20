@@ -12,8 +12,11 @@ public class MahasiswaMain16 {
         mhs1.updateIpk(3.60);
         mhs1.tampilkanInformasi();
 
-    // Mahasiswa16 mhs2 = new Mahasiswa16("Annisa Nabila", "2141720160", 3.25, "TI 2L");
-    //     mhs2.updateIpk(3.30);
-    //     mhs2.tampilkanInformasi();
+    Mahasiswa16 mhs2 = new Mahasiswa16("Annisa Nabila", "2141720160", 3.25, "TI 2L");
+         mhs2.updateIpk(3.30);
+         mhs2.tampilkanInformasi();
+
+    Mahasiswa16 mhsFauzi = new Mahasiswa16("Fauzi Rohman", "244107020067", 3.40, "TI 1E");
+        mhsFauzi.tampilkanInformasi();
     }
 }
