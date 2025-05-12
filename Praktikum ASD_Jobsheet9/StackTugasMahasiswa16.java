@@ -39,6 +39,7 @@ public void push(Mahasiswa16 mhs) {
         }
     }
 
+
 public Mahasiswa16 pop() {
     if (!isEmpty()) {
         Mahasiswa16 m = stack[top];
@@ -65,5 +66,16 @@ public void print() {
     }
     System.out.println("");
 }
-    
+
+public Mahasiswa16 lihatTugasTerbawah() {
+    if (!isEmpty()) {
+        return stack[top];
+    } else{
+        return null;
+    }
+}   
+
+public int jmlTugas() {
+        return top + 1;
+    }
 }
