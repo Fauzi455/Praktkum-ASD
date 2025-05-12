@@ -26,14 +26,18 @@ public boolean isEmpty(){
     }
 }
 
-public void push(Mahasiswa16 mhs){
-    if (!isFull()) {
-        top++;
-        stack[top] = mhs;
-    } else{
-        System.out.println("Stack penuh! Tidak bisa menambahkan tugas lagi.");
+public void push(Mahasiswa16 mhs) {
+        if (!isFull()) {
+            
+            for (int i = top + 1; i > 0; i--) {
+                stack[i] = stack[i - 1];
+            }
+            stack[0] = mhs;
+            top++;
+        } else {
+            System.out.println("Stack penuh! Tidak bisa menambahkan tugas lagi.");
+        }
     }
-}
 
 public Mahasiswa16 pop() {
     if (!isEmpty()) {
