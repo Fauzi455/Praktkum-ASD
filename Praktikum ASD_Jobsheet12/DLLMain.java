@@ -20,32 +20,12 @@ do{
 
     switch (pilihan) {
         case 1 ->{
-            System.out.print("Masukkan NIM: ");
-            String nim = scan.nextLine();
-            System.out.print("Masukkan Nama: ");
-            String nama = scan.nextLine();
-            System.out.print("Masukkan Kelas: ");
-            String kelas = scan.nextLine();
-            System.out.print("Masukkan IPK: ");
-            double ipk = scan.nextDouble();
-            scan.nextLine();
-
-            Mahasiswa01 mhs = new Mahasiswa01(nim, nama, kelas, ipk);
+            Mahasiswa01 mhs = list.inputMahasiswa(scan);
             list.addFirst(mhs);
         }
 
         case 2 ->{
-            System.out.print("Masukkan NIM: ");
-            String nim = scan.nextLine();
-            System.out.print("Masukkan Nama: ");
-            String nama = scan.nextLine();
-            System.out.print("Masukkan Kelas: ");
-            String kelas = scan.nextLine();
-            System.out.print("Masukkan IPK: ");
-            double ipk = scan.nextDouble();
-            scan.nextLine();
-
-            Mahasiswa01 mhs = new Mahasiswa01(nim, nama, kelas, ipk);
+             Mahasiswa01 mhs = list.inputMahasiswa(scan);
             list.addLast(mhs);
         }
 
