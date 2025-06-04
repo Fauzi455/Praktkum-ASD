@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class DoubleLinkedList01 {
     Node01 head;
     Node01 tail;
@@ -104,16 +103,16 @@ public Node01 search(String nim) {
         return null;
     }
 
-public Mahasiswa01 inputMahasiswa(Scanner scan){
-        System.out.print("Masukkan NIM: ");
-        String nim = scan.nextLine();
-        System.out.print("Masukkan Nama: ");
-        String nama = scan.nextLine();
-        System.out.print("Masukkan Kelas: ");
-        String kelas = scan.nextLine();
-        System.out.print("Masukkan IPK: ");
-        double ipk = scan.nextDouble();
-        scan.nextLine();
-        return new Mahasiswa01(nim, nama, kelas, ipk);
-}
+public static Mahasiswa01 inputMahasiswa(Scanner scan){
+    System.out.print("Masukkan NIM: ");
+    String nim = scan.nextLine();
+    System.out.print("Masukkan Nama: ");
+    String nama = scan.nextLine();
+    System.out.print("Masukkan Kelas: ");
+    String kelas = scan.nextLine();
+    System.out.print("Masukkan IPK: ");
+    double ipk = scan.nextDouble();
+    scan.nextLine();
+    return new Mahasiswa01(nim, nama, kelas, ipk);
+    }
 }
